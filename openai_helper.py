@@ -2,7 +2,8 @@ import json
 from secret_key import OPENAI_API_KEY
 from openai import OpenAI
 import pandas as pd
-
+# import os
+# OPENAI_API_KEY = os.getenv(OPENAI_API_KEY)
 client = OpenAI(api_key=OPENAI_API_KEY)
 from PyPDF2 import PdfReader
 from docx import Document
